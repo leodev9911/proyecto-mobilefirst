@@ -1,0 +1,530 @@
+/*
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografía
+4. Temas visuales
+5. Otros 
+*/
+:root {
+    /*Colores del proyecto*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --grey: #BABABA;
+    --grey-dark:  #808080;
+    --of-white: #FAF8F7;
+    --white: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family:'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 335px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+.header__figure img {
+    width: 150px;
+    height: 24px;
+    margin-top: 40px;
+}
+.header__div {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.header__div h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--white);
+}
+.header__div p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header__div .header__button{
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--of-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warm-black);
+}
+.header__div .header__button span {
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/vector.svg);
+}
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--of-white);
+}
+.main__exchange-section {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main__background-image {
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;  
+    background-image: url(../assets/imgs/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+.main__exchange-title {
+    width: 90%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main__exchange-title h2 {
+    margin-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.main__exchange-title p{
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 550;
+    line-height: 2.1rem;
+    color: #757575;
+}
+.main__table-container {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.table__h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: #FF9536;
+    font-family: 'DM Sans', sans-serif;
+}
+.table__h3--blue {
+    color: var(--secondary-blue);
+}
+.table__container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 160px;
+    margin: 0 auto;
+}
+.table__container table {
+    width: 100%;
+    height: 100%;
+}
+.table__container table td {
+    width: 55%;
+    max-width: 160px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--white);
+}
+.table__container table .table__right {
+    width: 45%;
+    max-width: 140px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    color: #757575;    
+}
+.table__container .top__left {
+    border-radius: 8px 0px 0px 0px;
+}
+.table__container .top__right {
+    border-radius: 0px 8px 0px 0px;
+}
+.table__container .bottom__left {
+    border-radius: 0px 0px 0px 8px;
+}
+.table__container .bottom__right {
+    border-radius: 0px 0px 8px 0px;
+}
+.table__container span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url(../assets/icons/trending-up-green.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.table__container .table__right--arrow {
+    background-image: url(../assets/icons/trending-down-red.svg);
+}
+.act__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 260px;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    background-color: var(--soft-orange);
+    color: var(--warm-black);
+}
+.act__container--blue {
+    background-color: var(--soft-blue);
+}
+.benefits__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--warm-black);
+}
+.logo__container {
+    display: inline;
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    transform: translate(50%, 50%);
+    width: 40px;
+    height: 24px;
+    background-image: url(../assets/icons/batataicon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.benefits__container {
+    width: 90%;
+    min-width: 280px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+.benefits__h2 {
+    margin-bottom: 20px;
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}
+.benefits__p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-dark);
+}
+.article__section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article__section .article__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    width: 90%;
+    min-width: 288px;
+    max-width: 600px;
+    min-height: 150px;
+    margin-bottom: 10px;
+    padding: 15px 15px 20px 15px;
+    border-radius: 5px;
+    background-color: var(--warm-black-1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.article__container .article-icon__section {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/clock.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.article__container .article-icon__section--eye {
+    background-image: url(../assets/icons/eye.svg);
+}
+.article__container .article-icon__section--dollar {
+    background-image: url(../assets/icons/dollar-sign.svg);
+}
+.article__container .article-icon__section--check {
+    background-image: url(../assets/icons/check-circle.svg);
+}
+.article__container .article__p1 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--white)
+}
+.article__container .article__p2 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: var(--grey-dark);
+}
+.image__section {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url(../assets/imgs/bitcoinbabyx2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header5__container {
+    position: relative;
+    top: 60px;
+    width: 290px;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+h5 {
+    font-family:'DM Sans', sans-serif;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--white);
+}
+.plan__section {
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.title__section {
+    width: 90%;
+    min-width: 290px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.title__section .header__p {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+.title__section .plan__p {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #757575;
+}
+.prices__section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 350px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.prices__card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 60%;
+    max-width: 300px;
+    min-width: 190px;
+    height: 250px;
+    margin-bottom: 30px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+.prices__card .black__p {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #000000;
+}
+.prices__card .number__p {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    color: #000000;
+}
+.prices__card .number__p span {
+    position: relative;
+    right: 2px;
+    bottom: 30px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.prices__card .gray__p {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+}
+.prices__card .recomended__container {
+    position: absolute;
+    right: 50%;
+    bottom: 100%;
+    transform: translate(50%, 50%);
+    width: 100px;
+    max-width: 120px;
+    height: 30px;
+    max-height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: var(--bitcoin-orange);
+}
+.prices__card .recomended__container p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--white);
+}
+.prices__card .pick__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    min-width: 120px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 12px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    background-color: var(--white);
+}
+.prices__card .pick__button p {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif
+}
+.prices__card .pick__button .arrow-right__span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/arrow-right.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+.footer__container ul li{
+    list-style: none;
+}
+.footer__container a {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.p1 {
+    margin-top: 15px;
+}
+.logo-footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__span {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url(../assets/icons/batataicon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-footer__container p {
+    font-weight: 500;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
